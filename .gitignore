@@ -1,4 +1,5 @@
-# OS/editor
+
+# OS and editors
 .DS_Store
 Thumbs.db
 .vscode/
@@ -14,39 +15,46 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.pytype/
+.pyre/
 .coverage
 coverage.xml
 htmlcov/
+.ipynb_checkpoints/
 
 # Virtual environments
 venv/
 .venv/
 env/
 myenv/
+ENV/
 backend/myenv/
 
-# Secrets and local config
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
+.envrc
 
 # Logs
 *.log
 
-# DB backups
+# Database backups
 emergency_full_backup.sql
 safe_logic_only.sql
 
-# Node/frontend
+# Node and frontend
 node_modules/
 frontend/node_modules/
 frontend/dist/
 frontend/build/
 
-# Misc
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Temporary files
 *.swp
 *.swo
-
-# db backups
-emergency_full_backup.sql
-safe_logic_only.sql
+tempCodeRunnerFile.py
